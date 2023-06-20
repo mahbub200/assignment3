@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="commonClass">Lorem ipsum dolor sit amet.</p>
+    <p class="commonClass">Odit veritatis tenetur voluptatibus numquam.</p>
+    <p class="commonClass">Temporibus molestiae consectetur inventore eius!</p>
+    <p class="commonClass">Laboriosam totam ipsam dicta itaque?</p>
+    <p class="commonClass">Neque repudiandae itaque error exercitationem!</p>
+    <p id="unique1">Lorem ipsum dolor sit amet.</p>
+    <p id="unique2">Lorem ipsum dolor sit amet.</p>
+    <p id="unique3">Neque repudiandae itaque error exercitationem!</p>
+    <script>
+        
+      function styeleIncss() {
+        let paragraphs = document.querySelectorAll("p.commonClass");
+        // another way 
+        // for (var i = 0; i < paragraphs.length; i++) {
+        //   paragraphs[i].style.color = "red";
+        // }
+        for (let paragraph of paragraphs) {
+          paragraph.style.color = "red";
+        }
+      }
+      styeleIncss();
+    </script>
+  </body>
+</html>
