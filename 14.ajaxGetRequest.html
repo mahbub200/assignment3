@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./js/axios.min.js"></script>
+    <script> ajaxGetRequest();
+        async function ajaxGetRequest() {
+          let response = await axios.get("https://api.example.com/data");
+          console.log("response", response);
+        }</script>
+</body>
+</html>

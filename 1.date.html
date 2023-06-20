@@ -8,8 +8,18 @@
   <body>
     <script>
         function date(year){
-            let obj =new Date(year).getDay();
-            return obj;
+          const weekday = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        const date = new Date(year);
+        let dayOfTheWeek = weekday[date.getDay()];
+        return dayOfTheWeek;
 
         }
         let result=date('2023-06-20');
